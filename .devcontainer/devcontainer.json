@@ -1,19 +1,21 @@
 {
-	"name": "SageMath dev",
+	"name": "Macauley",
 	// "dockerFile": "Dockerfile", // backup to build container more locally
-	"image": "ghcr.io/uoe-som-professional-skils/uoe-som-professional-skils/devcontainer-sagemath:main",
+	"image": "docker.io/rzlatev/m2jk",
+	"remoteUser": "jovyan",
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-python.python",
 				"ms-toolsai.jupyter"
-			],
+			]
+			/*
 			"settings": {
 				"notebook.displayOrder": [
 					"text/latex",
 					"text/plain"
 				]
 			}
+			*/
 		}
 	},
 	"containerEnv": {
